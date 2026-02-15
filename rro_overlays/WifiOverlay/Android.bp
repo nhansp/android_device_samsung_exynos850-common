@@ -1,5 +1,5 @@
 runtime_resource_overlay {
-    name: "WifiOverlay",
-    theme: "WifiOverlay",
+    name: "WifiOverlay_exynos850",
+    theme: "WifiOverlay_exynos850",
     vendor: true
 }

@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-COMMON_PATH := device/samsung/a21s-common
+COMMON_PATH := device/samsung/exynos850-common
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/samsung/a21s-common/a21s-common-vendor.mk)
+$(call inherit-product, vendor/samsung/exynos850-common/exynos850-common-vendor.mk)
 
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
@@ -122,7 +122,6 @@ PRODUCT_PACKAGES += \
 # Graphics
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := 280dpi
 PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 # Health
@@ -152,7 +151,7 @@ PRODUCT_ENABLE_UFFD_GC := true
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service.samsung
 
-$(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/a21s-common:libskeymaster4device)
+$(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/exynos850-common:libskeymaster4device)
 
 # Lineage Health
 PRODUCT_PACKAGES += \
@@ -293,7 +292,7 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    WifiOverlay \
+    WifiOverlay_exynos850 \
     android.hardware.wifi-service \
     hostapd \
     wpa_supplicant

@@ -31,11 +31,7 @@ Value* VerifyBootloader(const char* name, State* state,
   }
 
   char ninth_char = bootloader[8]; // index 8 = 9th character
-  if (ninth_char == 'C') {
-    return StringValue("1");
-  } else {
-    return StringValue("0");
-  }
+  return StringValue(((int)(ninth_char - '0') >= '5') ? "1" : "0");
 }
 
 void Register_librecovery_updater_exynos850() {

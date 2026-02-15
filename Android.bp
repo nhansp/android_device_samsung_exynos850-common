@@ -6,6 +6,6 @@
 
 soong_namespace {
     imports: [
-        "vendor/samsung/a21s-common",
+        "vendor/samsung/exynos850-common",
     ],
 }

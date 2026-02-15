@@ -10,19 +10,6 @@ vendor/lib/soundfx/libswdap.so
 vendor/lib/libprofileparamstorage.so
 vendor/lib/libsecaudiocoreutils.so
 
-# Audio Firmware
-vendor/firmware/AP_AUDIO_SLSI.bin
-vendor/firmware/APDV_AUDIO_SLSI.bin
-vendor/firmware/SoundBoosterParam.bin
-vendor/firmware/calliope_dram.bin
-vendor/firmware/calliope_dram_2.bin
-vendor/firmware/calliope_sram.bin
-vendor/firmware/calliope_sram_2.bin
-vendor/firmware/dax_param.bin
-
-# Bluetooth Firmware
-vendor/etc/wifi/mx140_bt.hcf
-
 # Camera
 vendor/lib/hw/camera.exynos850.so
 vendor/lib/libexynoscamera_plugin.so
@@ -50,14 +37,6 @@ vendor/lib64/libuniplugin.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 vendor/etc/btcon.json
 
-# Charger Firmware
-vendor/firmware/mfc_fw.bin
-
-# Codecs
-vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_performance.xml
-vendor/etc/media_profiles_V1_0.xml
-
 # Fingerprint
 vendor/lib64/libbauthserver.so
 vendor/lib64/libbauthtzcommon.so
@@ -65,28 +44,6 @@ vendor/lib64/libegis_fp_normal_sensor_test.so
 vendor/lib64/libgf_in_system_lib.so
 vendor/lib64/libqfp_sensortest.so
 vendor/lib64/libsynaFpSensorTestNwd.so
-
-# Firmware
-vendor/firmware/MCD_NACHO_slog.bin
-vendor/firmware/abox_tplg.bin
-vendor/firmware/abox_tplg.conf
-vendor/firmware/dax_param.bin
-vendor/firmware/listenbackeffect.bin
-vendor/firmware/rxse.bin
-vendor/firmware/sb_others.bin
-vendor/firmware/setfile_gc02m1.bin
-vendor/firmware/setfile_gc02m1_macro.bin
-vendor/firmware/setfile_gm2.bin
-vendor/firmware/setfile_sr846.bin
-vendor/firmware/tdnr_GC02M1.json
-vendor/firmware/tdnr_S5KGM2.json
-vendor/firmware/tdnr_SR846.json
-vendor/firmware/txse1.bin
-vendor/firmware/txse2.bin
-vendor/firmware/setfile_4ha.bin
-vendor/firmware/setfile_hi1336.bin
-vendor/firmware/tdnr_HI1336.json
-vendor/firmware/tdnr_S5K4HA.json
 
 # Gatekeeper
 vendor/lib/hw/gatekeeper.exynos850.so
@@ -119,8 +76,6 @@ vendor/lib64/libkeymaster_helper.so
 vendor/lib64/libskeymaster4device.so
 
 # OMX Firmware
-vendor/firmware/is_lib.bin
-vendor/firmware/is_rta.bin
 vendor/etc/seccomp_policy/mediacodec.policy
 
 # RIL
